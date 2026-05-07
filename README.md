@@ -158,26 +158,6 @@ print(f"Found {len(us_cities)} cities in USA")
 
 ---
 
-## 🔄 Data Updates
-
-This data is generated using the `country-state-city` npm package. To update the data:
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Run the export script**:
-   ```bash
-   node export-data.js
-   ```
-
-3. **Commit changes**:
-   ```bash
-   git add .
-   git commit -m "Update dataset"
-   git push
-   ```
 
 ---
 
