@@ -39,14 +39,10 @@
 
 ```
 📦 Countries-States-Cities-Data/
-├── 📄 README.md
-├── 📄 package.json
-├── 📄 export-data.js
-├── 📄 .gitignore
-└── 📂 csv-data/
-    ├── 🌍 countries.csv    # 250 countries with complete info
-    ├── 🗺️ states.csv       # 4,963 states with country mapping
-    └── 🏙️ cities.csv       # 148,038 cities with state & country mapping
+├── 📄 README.md              # Complete documentation and usage guide
+├── 🌍 countries.csv          # 250 countries with complete info
+├── 🗺️ states.csv             # 4,963 states with country mapping
+└── 🏙️ cities.csv             # 148,038 cities with state & country mapping
 ```
 
 ---
@@ -91,9 +87,9 @@
 ## � Quick Download
 
 ### Direct CSV Downloads
-- 🌍 [Download countries.csv](./csv-data/countries.csv) (13 KB)
-- 🗺️ [Download states.csv](./csv-data/states.csv) (142 KB)  
-- 🏙️ [Download cities.csv](./csv-data/cities.csv) (4.5 MB)
+- 🌍 [Download countries.csv](./countries.csv) (13 KB)
+- 🗺️ [Download states.csv](./states.csv) (142 KB)  
+- 🏙️ [Download cities.csv](./cities.csv) (4.5 MB)
 
 ### Download All Files
 ```bash
@@ -109,7 +105,7 @@ git clone https://github.com/hussainu6/Countries-States-Cities-Data.git
 ```javascript
 // Using fetch to load CSV data
 async function loadCountries() {
-    const response = await fetch('./csv-data/countries.csv');
+    const response = await fetch('./countries.csv');
     const csvData = await response.text();
     // Parse CSV data...
     console.log(csvData);
@@ -117,7 +113,7 @@ async function loadCountries() {
 
 // Or use with node-fetch
 const fs = require('fs');
-const csvData = fs.readFileSync('./csv-data/countries.csv', 'utf8');
+const csvData = fs.readFileSync('./countries.csv', 'utf8');
 ```
 
 ### 🐍 Python
@@ -125,9 +121,9 @@ const csvData = fs.readFileSync('./csv-data/countries.csv', 'utf8');
 import pandas as pd
 
 # Load data into pandas DataFrame
-countries = pd.read_csv('csv-data/countries.csv')
-states = pd.read_csv('csv-data/states.csv')
-cities = pd.read_csv('csv-data/cities.csv')
+countries = pd.read_csv('countries.csv')
+states = pd.read_csv('states.csv')
+cities = pd.read_csv('cities.csv')
 
 # Example: Get all cities in a specific country
 us_cities = cities[cities['countryCode'] == 'US']
@@ -143,7 +139,7 @@ print(f"Found {len(us_cities)} cities in USA")
 ### 🌐 Web Application
 ```html
 <!-- Direct link to CSV files -->
-<a href="https://raw.githubusercontent.com/hussainu6/Countries-States-Cities-Data/main/csv-data/countries.csv" download>
+<a href="https://raw.githubusercontent.com/hussainu6/Countries-States-Cities-Data/main/countries.csv" download>
     Download Countries CSV
 </a>
 ```
@@ -185,11 +181,6 @@ This data is generated using the `country-state-city` npm package. To update the
 
 ---
 
-## 📝 Source & Credits
-
-- **Data Source**: [country-state-city npm package](https://www.npmjs.com/package/country-state-city)
-- **License**: Check original package for specific licensing terms
-- **Last Sync**: Automatically updated with latest package data
 
 ---
 
