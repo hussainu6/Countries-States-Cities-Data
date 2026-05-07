@@ -181,9 +181,6 @@ We welcome contributions! Here's how you can help:
 
 ---
 
-## 📄 License
-
-This dataset is maintained for public use. Please check the original [country-state-city package](https://www.npmjs.com/package/country-state-city) for specific licensing terms.
 
 ---
 
